@@ -1,0 +1,232 @@
+/**
+ * Kashiwazaki SEO Code Snippet Shortcode - 管理画面スタイル
+ */
+
+/* 共通スタイル */
+.kscss-meta-box {
+    padding: 10px 0;
+}
+
+.kscss-meta-box p {
+    margin-bottom: 15px;
+}
+
+.kscss-meta-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* タイプバッジ */
+.kscss-type-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.kscss-type-php {
+    background: #8892bf;
+    color: #fff;
+}
+
+.kscss-type-html {
+    background: #e44d26;
+    color: #fff;
+}
+
+.kscss-type-css {
+    background: #264de4;
+    color: #fff;
+}
+
+.kscss-type-javascript {
+    background: #f7df1e;
+    color: #000;
+}
+
+/* ショートコードボックス */
+.kscss-shortcode-box p {
+    margin-bottom: 15px;
+}
+
+.kscss-shortcode-box .kscss-shortcode-input {
+    margin-bottom: 5px;
+}
+
+.kscss-shortcode-box .button {
+    margin-top: 5px;
+}
+
+/* スニペット一覧 */
+.kscss-list-filters {
+    margin: 20px 0;
+}
+
+.kscss-filter-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kscss-filter-row input[type="search"] {
+    max-width: 300px;
+}
+
+.kscss-snippets-table .column-title {
+    width: 25%;
+}
+
+.kscss-snippets-table .column-type {
+    width: 10%;
+}
+
+.kscss-snippets-table .column-category {
+    width: 15%;
+}
+
+.kscss-snippets-table .column-shortcode {
+    width: 30%;
+}
+
+.kscss-snippets-table .column-date {
+    width: 15%;
+}
+
+.kscss-shortcode-display {
+    display: inline-block;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    background: #f0f0f1;
+    padding: 3px 8px;
+    border-radius: 3px;
+}
+
+.kscss-no-items {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+    border: 1px solid #c3c4c7;
+}
+
+.kscss-no-items p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* 使用状況ページ */
+.kscss-usage-actions {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.kscss-usage-notice {
+    margin: 20px 0;
+}
+
+.kscss-unused-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 4px;
+}
+
+.kscss-unused-section h2 {
+    margin-top: 0;
+    color: #856404;
+}
+
+.kscss-usage-section {
+    margin-top: 20px;
+}
+
+.kscss-unused-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #d63638;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.kscss-used-pages-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.kscss-used-pages-list li {
+    margin-bottom: 5px;
+}
+
+.kscss-page-type {
+    color: #666;
+    font-size: 12px;
+}
+
+.kscss-more-pages {
+    color: #666;
+    font-style: italic;
+}
+
+/* コードエディタ */
+#kscss_code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    tab-size: 4;
+}
+
+.CodeMirror {
+    border: 1px solid #ddd;
+    height: auto;
+    min-height: 300px;
+}
+
+.CodeMirror-scroll {
+    min-height: 300px;
+}
+
+/* 変更履歴メタボックス */
+#kscss_revisions .inside table {
+    margin: 0;
+}
+
+/* コピー成功メッセージ */
+.kscss-copy-success {
+    display: inline-block;
+    margin-left: 10px;
+    color: #00a32a;
+    font-size: 12px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 782px) {
+    .kscss-filter-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .kscss-filter-row input[type="search"],
+    .kscss-filter-row select {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .kscss-snippets-table .column-shortcode {
+        display: none;
+    }
+
+    .kscss-shortcode-display {
+        max-width: 150px;
+    }
+}

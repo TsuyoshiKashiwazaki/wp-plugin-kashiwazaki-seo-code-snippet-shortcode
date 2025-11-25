@@ -1,0 +1,159 @@
+/**
+ * Kashiwazaki SEO Code Snippet Shortcode - Gutenbergブロックエディタースタイル
+ */
+
+.wp-block-kscss-code-snippet {
+    padding: 20px;
+    background: #f6f7f7;
+    border: 1px dashed #c3c4c7;
+    border-radius: 4px;
+}
+
+.kscss-block-placeholder {
+    text-align: center;
+    color: #666;
+}
+
+.kscss-block-placeholder .dashicons {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+    color: #c3c4c7;
+}
+
+.kscss-block-placeholder p {
+    margin: 0 0 15px;
+}
+
+.kscss-block-preview {
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.kscss-block-preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.kscss-block-preview-title {
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+.kscss-block-preview-type {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.kscss-block-preview-type.php {
+    background: #8892bf;
+    color: #fff;
+}
+
+.kscss-block-preview-type.html {
+    background: #e44d26;
+    color: #fff;
+}
+
+.kscss-block-preview-type.css {
+    background: #264de4;
+    color: #fff;
+}
+
+.kscss-block-preview-type.javascript {
+    background: #f7df1e;
+    color: #000;
+}
+
+.kscss-block-preview-content {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 12px;
+    background: #f6f7f7;
+    padding: 10px;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* HTMLタイプブロック */
+.kscss-html-block {
+    border: 1px solid #007cba;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.kscss-block-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: #007cba;
+    color: #fff;
+}
+
+.kscss-block-title {
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.kscss-block-title .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.kscss-html-preview {
+    padding: 15px;
+    background: #fff;
+    min-height: 50px;
+}
+
+.kscss-html-code {
+    padding: 0;
+    background: #282c34;
+}
+
+.kscss-html-code pre {
+    margin: 0;
+    padding: 15px;
+    background: #282c34;
+    color: #abb2bf;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-x: auto;
+    max-height: 300px;
+}
+
+.kscss-html-code code {
+    background: none;
+    color: inherit;
+    padding: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* サイドバーコントロール */
+.kscss-block-inspector .components-base-control {
+    margin-bottom: 16px;
+}
+
+.kscss-block-inspector .components-select-control__input {
+    min-height: 36px;
+}
